@@ -48,5 +48,9 @@
         </ContentPage>
     </FlyoutItem>
 
+    <FlyoutItem Title="HLTV" Route="hltv" Icon="{StaticResource HltvIcon}">
+        <ShellContent ContentTemplate="{DataTemplate views:HltvView}" Title="HLTV"/>
+    </FlyoutItem>
+
     <ShellContent ContentTemplate="{DataTemplate views:AboutView}" Title="About" Icon="{StaticResource AboutIcon}" />
 </Shell>

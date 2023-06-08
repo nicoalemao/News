@@ -1,0 +1,2 @@
+API key NewsAPI
+5b73d6faa19746b5abf4d5df1d8ba207

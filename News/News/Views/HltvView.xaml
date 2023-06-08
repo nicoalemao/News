@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:News.Views"
+             x:Name="hltvview"
+             Title="HLTV"
+             x:Class="News.Views.HltvView">
+    <ContentPage.Content>
+        <StackLayout Padding="14">
+            
+            <CollectionView ItemsSource="{Binding CurrentArticle.HltvArticles}">
+                <CollectionView.EmptyView>
+                    <Label Text="Loading" />
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <ContentView.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding BindingContext.ItemSelected, Source={x:Reference hltvview}}"
+                                    CommandParameter="{Binding .}" />
+                            </ContentView.GestureRecognizers>
+                            <views:HltvItem/>
+                        </ContentView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

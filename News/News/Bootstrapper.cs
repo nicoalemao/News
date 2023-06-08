@@ -14,6 +14,8 @@ namespace News
 
             containerBuilder.RegisterType<NewsService>();
 
+            containerBuilder.RegisterType<HltvServices>();
+
             containerBuilder.RegisterType<MainShell>();
 
             containerBuilder.RegisterType<Navigator>().As<INavigate>();

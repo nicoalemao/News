@@ -31,6 +31,10 @@
                        FontFamily="{StaticResource IconFont}" 
                        Glyph='&#xf05a;' Size="22" Color="Black" />
 
+            <FontImage x:Key="HltvIcon"
+                       FontFamily="{StaticResource IconFont}"
+                       Glyph="&#xf11b;" Size="22" Color="Black" />
+
         </ResourceDictionary>
 
     </Application.Resources>
